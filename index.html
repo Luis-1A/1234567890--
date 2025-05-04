@@ -1,1 +1,336 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="geral.css">
+    <link rel="stylesheet" type="text/css" href="home-vendedor.css">
+    <link rel="stylesheet" type="text/css" href="calendario.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2fe847868f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Verde & Tecnologia</title>
+</head>
+<body>
+
+<header>
+
+    <div class="cabecalho-esquerdo">
+        <a href="index.html"><img src="logo-verde-tecnologia.png" class="logo"></a>
+    </div>
+
+    <div class="cabecalho-direito">
+        <a href="cadastrar-servico.html" class="sombra"><div>Oferecer meus serviços</div></a>
+    </div>
+
+    <div class="cabecalho-direito-mobile">
+        <button type="button" class="abrir-menu botao-secundario"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <nav class="menu">
+        <div class="backdrop"></div>
+        <ul>
+            <li class="fechar-menu"><button type="button"><i class="fas fa-times"></i></button></li>
+            <a href="servicos.html"><li>Oferecer meus serviços</li></a>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="meus-anuncios">
+
+    <h2>Meus Projetos</h2>
+    
+    <div class="carrossel-row">
+
+        <div class="miniatura-column sombra sombra-hover">
+            <a href="projeto.html">
+                <div class="img">
+                    <img src="thumb.jpg">
+                </div>
+                <div class="texto">
+                    <div>
+                        <div class="preco">R$ 5.000</div>
+                    </div>
+                    <div>
+                        <div class="quartos">Jardim com irrigação</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="miniatura-column sombra sombra-hover">
+            <a href="projeto.html">
+                <div class="img">
+                    <img src="thumb.jpg">
+                </div>
+                <div class="texto">
+                    <div>
+                        <div class="preco">R$ 3.500</div>
+                    </div>
+                    <div>
+                        <div class="quartos">Manutenção de jardim</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="miniatura-column sombra sombra-hover">
+            <a href="projeto.html">
+                <div class="img">
+                    <img src="thumb.jpg">
+                </div>
+                <div class="texto">
+                    <div>
+                        <div class="preco">R$ 7.000</div>
+                    </div>
+                    <div>
+                        <div class="quartos">Automação elétrica</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="agendamentos">
+
+    <h2>Agendamentos de Consultoria</h2>
+
+    <div>
+
+        <div class="calendario sombra">
+
+            <div class="header">
+
+            <div class="anterior">❮</div>
+            <div class="mes"><div id="mesAnoAtual"></div></div>
+            <div class="proximo">❯</div>
+
+            </div>
+
+            <table class="dias">
+
+                <tr>
+                    <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sab</th>
+                </tr>
+
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td>1</td>
+                </tr>
+
+                <tr>
+                    <td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+                </tr>
+
+                <tr>
+                    <td>9</td><td>10</td><td class="agendado">11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+                </tr>
+
+                <tr>
+                    <td>16</td><td>17</td><td>18</td><td>19</td><td class="agendado">20</td><td>21</td><td>22</td>
+                </tr>
+
+                <tr>
+                    <td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="visita-agendada">
+    
+            <h3>João Paulo</h3>
+            
+            <p>Terça-feira, 11 de fevereiro de 2020, às 15h.</p>
+            <p>Orçamento: R$ 5.000 |ou| <i>orçamento_ainda_não_realizado</i>.</p>
+            <p>Telefone: 11.99999.9999</p>
+            <p>E-mail: joao@paulo.com</p>
+            <p>Agendamento realizado no dia <i>data_do_agendamento</i>.</p>
+    
+        </div>
+
+    </div>
+
+</section>
+
+<section class="propostas">
+
+    <h2>Ofertas Recebidas</h2>
+
+    <table class="propostas sombra">
+        <tr>
+            <th>#</th>
+            <th class="coluna-desktop">Cliente</th>
+            <th class="coluna-desktop">Data da oferta</th>
+            <th class="coluna-desktop">Oferta</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="coluna-desktop">Cliente</td>
+            <td class="coluna-desktop">24/04/2020</td>
+            <td class="coluna-desktop">R$ 4.000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="coluna-desktop">Cliente</td>
+            <td class="coluna-desktop">24/04/2020</td>
+            <td class="coluna-desktop">R$ 3.500</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="coluna-desktop">Cliente</td>
+            <td class="coluna-desktop">24/04/2020</td>
+            <td class="coluna-desktop">R$ 6.000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="coluna-desktop">Cliente</td>
+            <td class="coluna-desktop">24/04/2020</td>
+            <td class="coluna-desktop">R$ 5.000</td>
+        </tr>
+    </table>
+
+</section>
+
+<section class="analises">
+
+    <h2>Análises</h2>
+
+    <div class="graficos">
+        <canvas id="grafico"></canvas>
+    </div>
+
+</section>
+
+<section class="servicos">
+
+    <h2>Nossos Serviços</h2>
+
+    <div class="carrossel-row">
+
+        <div class="miniatura-column sombra sombra-hover">
+            <a href="servico.html">
+                <div class="img">
+                    <img src="thumb.jpg">
+                </div>
+                <div class="texto">
+                    <div class="preco">Planejamento de irrigação</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="miniatura-column sombra sombra-hover">
+            <a href="servico.html">
+                <div class="img">
+                    <img src="thumb.jpg">
+                </div>
+                <div class="texto">
+                    <div class="preco">Manutenção de jardins</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="miniatura-column sombra sombra-hover">
+            <a href="servico.html">
+                <div class="img">
+                    <img src="thumb.jpg">
+                </div>
+                <div class="texto">
+                    <div class="preco">Automação de sistemas</div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <div class="rodape-bloco">
+        <h2>Redes Sociais</h2>
+        <a href=""><div>Facebook</div></a>
+        <a href=""><div>Twitter</div></a>
+        <a href=""><div>Instagram</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Top Serviços</h2>
+        <a href=""><div>Projetos de irrigação no RJ</div></a>
+        <a href=""><div>Manutenção de jardins em SP</div></a>
+        <a href=""><div>Automação elétrica em Porto Alegre</div></a>
+    </div>
+    <div class="rodape-bloco">
+        <h2>Verde & Tecnologia</h2>
+        <a href=""><div>Quem somos</div></a>
+        <a href=""><div>Contato</div></a>
+        <a href=""><div>Relatar um problema</div></a>
+    </div>
+</footer>
+
+<script>
+
+var ctx = document.getElementById('grafico').getContext('2d');
+var grafico = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Jardim pequeno', 'Sistema de irrigação', 'Automação elétrica'],
+        datasets: [ {
+                label: 'Ofertas recebidas',
+                data: [1, 0, 2],
+                backgroundColor: 'rgba(0,8,88,.2)',
+                borderColor: 'rgba(0,8,88,1)',
+                borderWidth: 3
+            }, {
+                label: 'Mensagens recebidas',
+                data: [2, 1, 4],
+                backgroundColor: 'rgba(0,158,170,.2)',
+                borderColor: 'rgba(0,158,170,.2)',
+                borderWidth: 3
+            }, {
+                label: 'Cliques',
+                data: [4, 2, 8],
+                backgroundColor: 'rgba(0,101,150,.2)',
+                borderColor: 'rgba(0,101,150,1)',
+                borderWidth: 3
+            }, {
+                label: 'Resultados de busca',
+                data: [5, 4, 9],
+                backgroundColor: 'rgba(0,202,210,.2)',
+                borderColor: 'rgba(0,202,210,1)',
+                borderWidth: 3
+            }
+        ]
+    },
+    
+    options: {
+        
+        legend: {
+            labels: {
+                usePointStyle: true
+            }
+        },
+
+        tooltips: {
+            enabled: true,
+            intersect: true,
+            titleFontSize: 16,
+            bodyFontSize: 14,
+            xPadding: 20,
+            yPadding: 20,
+            caretPadding: 30,
+            displayColors: false
+        }
+    }
+});
+
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="home-vendedor.js"></script>
+
+</body>
+</html>
